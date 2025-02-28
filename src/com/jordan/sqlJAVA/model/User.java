@@ -1,24 +1,31 @@
 package com.jordan.sqlJAVA.model;
 
 public class User {
+    /*
+     * Attributs
+     * */
     private int id;
     private String firstname;
     private String lastname;
     private String email;
     private String password;
+    private Roles roles;
 
+    /*
+     * Constructeurs
+     * */
     public User(){}
 
-    public User(String firstname, String lastname, String email, String password){
+    public User(String firstname, String lastname, String email, String password) {
         this.firstname = firstname;
         this.lastname = lastname;
         this.email = email;
         this.password = password;
-
     }
 
-    public User(int id, String firstname, String lastname, String userEmail) {
-    }
+    /*
+     * Getters et Setters
+     * */
 
     public int getId() {
         return id;
@@ -60,6 +67,18 @@ public class User {
         this.password = password;
     }
 
+    public Roles getRoles() {
+        return roles;
+    }
+
+    public void setRoles(Roles roles) {
+        this.roles = roles;
+    }
+
+    /*
+     * Méthodes
+     * */
+
     @Override
     public String toString() {
         return "User{" +
@@ -67,8 +86,7 @@ public class User {
                 ", firstname='" + firstname + '\'' +
                 ", lastname='" + lastname + '\'' +
                 ", email='" + email + '\'' +
+                ", role ='" + roles.getRolesName() + '\'' +
                 '}';
     }
-
-
 }

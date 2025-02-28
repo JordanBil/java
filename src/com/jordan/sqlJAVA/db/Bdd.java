@@ -6,7 +6,7 @@ import java.sql.SQLException;
 
 public class Bdd {
     //Attribut paramètre BDD
-    static final String DB_URL = "jdbc:mysql://localhost/java";
+    static final String DB_URL = "jdbc:mysql://localhost/sqlcda";
     static final String USERNAME = "root";
     static final String PASSWORD = "";
     //Connexion à la BDD
